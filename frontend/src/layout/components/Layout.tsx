@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { TbMenu2 } from 'react-icons/tb';
+import { colors } from '@/styles/utils/theme';
 import {
     Box, Drawer, DrawerBody, DrawerContent, DrawerOverlay, Flex, IconButton, useBreakpointValue,
     useDisclosure
@@ -64,7 +65,15 @@ export default function Layout(props: LayoutProps) {
     : { flex: '1', maxWidth: isOpen ? MAIN_WIDTH : '100%' };
 
   const mainContent = (
-    <Box px={10} py={5} shadow="md" {...widthProps} pb="200px" bg="white">
+    <Box
+      px={10}
+      py={5}
+      shadow="md"
+      {...widthProps}
+      pb="200px"
+      bg="white"
+      borderLeft={colors.boxBorder}
+    >
       <NavBar />
       <Box mt={5}>{children}</Box>
     </Box>

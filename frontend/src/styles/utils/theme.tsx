@@ -28,8 +28,8 @@ export const colors = {
 
   // Other colors:
   lightIcon: 'hsl(166, 8%, 72%)', // brand.400
-  boxBorder: 'hsl(0, 0%, 90%)',
-  normalBorder: 'hsl(0, 0%, 90%)',
+  boxBorder: 'hsl(63, 11%, 80%)',
+  normalBorder: 'hsl(63, 41%, 80%)',
   transientBorder: 'hsl(0, 0%, 90%)',
   snippetBorder: 'hsl(0, 0%, 90%)',
   docBackground: 'hsl(50, 100%, 99%)',

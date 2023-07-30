@@ -10,7 +10,15 @@ export const channelData1 = {
       category: '',
       topics: [
         {
-          content: 'social media platforms',
+          content: 'fame',
+          timestamps: [
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+          ],
+        },
+        {
+          content: 'programming',
           timestamps: [
             'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
             'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
@@ -44,6 +52,22 @@ export const channelData1 = {
             'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
           ],
         },
+        {
+          content: 'TikTok',
+          timestamps: [
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+          ],
+        },
+        {
+          content: 'YouTube',
+          timestamps: [
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+          ],
+        },
       ],
       takeaways: [
         {
@@ -64,7 +88,23 @@ export const channelData1 = {
       category: '',
       topics: [
         {
-          content: 'social media platforms',
+          content: 'love',
+          timestamps: [
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+          ],
+        },
+        {
+          content: 'fame',
+          timestamps: [
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+            'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
+          ],
+        },
+        {
+          content: 'money',
           timestamps: [
             'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=7949s',
             'https://www.youtube.com/watch?v=Z3_PwvvfxIU&t=931s',
@@ -91,6 +131,22 @@ export const categorizedData1 = [
   { category: 'Martial Arts', videos: channelData1.videos },
   { category: 'Programming', videos: channelData1.videos },
   { category: 'Politics', videos: channelData1.videos },
+];
+
+export const topicList1 = [
+  'social media platforms',
+  'consciousness',
+  'love',
+  'money',
+  'fame',
+  'chess',
+  'programming',
+  'political conflicts',
+  'Ju Jiutsu',
+  'MMA',
+  'machine learning',
+  'TikTok',
+  'YouTube',
 ];
 
 export type ChannelData = typeof channelData1;

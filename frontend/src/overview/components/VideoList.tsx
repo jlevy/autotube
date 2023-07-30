@@ -1,6 +1,8 @@
 import { ChannelData, VideoListData } from '@/api/sampleData';
+import { colors } from '@/styles/utils/theme';
 import { Box, Link } from '@chakra-ui/react';
 import BoxFrame from './BoxFrame';
+import { colorForTopic, topicPillSmall } from './Overview';
 
 const formatUrlTimestamp = (url: string) => {
   const urlParts = url.split('t=');
@@ -29,8 +31,8 @@ export default function VideoList(props: Props) {
           <Box>
             <i>Topics</i>:{' '}
             {video.topics.map((topic, i) => (
-              <Box as="span" key={i}>
-                {topic.content} at{' '}
+              <Box key={i}>
+                {topicPillSmall(topic.content, i)} at{' '}
                 {topic.timestamps.map((timestamp, i) => (
                   <Link key={i} href={timestamp}>
                     {formatUrlTimestamp(timestamp)}{' '}

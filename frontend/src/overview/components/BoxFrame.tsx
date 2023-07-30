@@ -20,7 +20,7 @@ export default function BoxFrame(props: Props) {
       // onMouseEnter={controls.onMouseEnter}
       // onMouseLeave={controls.onMouseLeave}
       // onDoubleClick={controls.onDoubleClick} // This is a bit annoying.
-      w="500px"
+      w="600px"
       minWidth={10}
       border={borders.boxSolid}
       borderRadius="0"
