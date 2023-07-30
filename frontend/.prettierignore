@@ -1,0 +1,4 @@
+*.graphql.ts
+*.graphql.js
+package-lock.json
+.next/

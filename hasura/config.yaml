@@ -1,0 +1,6 @@
+version: 3
+endpoint: https://XXX.hasura.app/
+metadata_directory: metadata
+actions:
+  kind: synchronous
+  handler_webhook_baseurl: https://XXX.hasura.app/v1beta1/relay
