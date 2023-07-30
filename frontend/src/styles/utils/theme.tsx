@@ -7,18 +7,18 @@ export const colors = {
 
   // Focus and selections:
   // Brightest focus for most important items (like selection ring):
-  brightFocus: 'hsl(181, 25%, 60%)',
+  brightFocus: 'hsl(0, 25%, 60%)',
   // For selection frames and indicators, a little dimemer than brightFocus:
-  selectionAccent: 'hsl(181, 20%, 72%)',
-  dimFocus: 'hsl(166, 20%, 90%)',
-  selectorCurrent: 'hsl(166, 24%, 93%)',
-  selectorGentle: 'hsl(180, 15%, 96%)',
+  selectionAccent: 'hsl(0, 20%, 72%)',
+  dimFocus: 'hsl(0, 20%, 90%)',
+  selectorCurrent: 'hsl(0, 24%, 93%)',
+  selectorGentle: 'hsl(0, 15%, 96%)',
   selectorBasic: 'hsl(0, 0%, 94%)', // gray.200
 
   // Text colors:
   // linkText: "hsl(221, 41%, 46%)",
-  linkText: 'hsl(203, 62%, 32%)',
-  activeText: 'hsl(181, 20%, 42%)',
+  linkText: 'hsl(203, 82%, 28%)',
+  activeText: 'hsl(20, 20%, 42%)',
   selectedText: 'hsl(176, 6%, 30%)', // brand
   menuText: 'hsl(176, 6%, 30%)', // brand
   hintText: 'hsl(174, 6%, 50%)', // brand.600

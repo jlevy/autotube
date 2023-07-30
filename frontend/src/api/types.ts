@@ -1,0 +1,3 @@
+type Category = {
+  name: string;
+};

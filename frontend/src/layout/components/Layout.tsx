@@ -42,7 +42,7 @@ export default function Layout(props: LayoutProps) {
       p={6}
       borderRight="1px"
       borderColor="shade.300"
-      bg="shade.100"
+      bg="white"
     >
       <Sidebar />
     </Box>
@@ -64,7 +64,7 @@ export default function Layout(props: LayoutProps) {
     : { flex: '1', maxWidth: isOpen ? MAIN_WIDTH : '100%' };
 
   const mainContent = (
-    <Box px={10} py={5} shadow="md" {...widthProps} pb="200px">
+    <Box px={10} py={5} shadow="md" {...widthProps} pb="200px" bg="white">
       <NavBar />
       <Box mt={5}>{children}</Box>
     </Box>
