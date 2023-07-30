@@ -40,10 +40,11 @@ pydub = "^0.25.1"
 webrtcvad = "^2.0.10"
 pytest = "^7.4.0"
 sqlalchemy-utils = "^0.41.1"
-psycopg2 = "^2.9.6"
+# psycopg2 = "^2.9.6"
 flask-migrate = "^4.0.4"
 llama-index = "0.7.12"
 pydantic = "1.10.11"
+anthropic = "^0.3.6"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.7"
