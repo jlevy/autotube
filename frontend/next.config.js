@@ -13,13 +13,13 @@ module.exports = {
   //  TODO: Danger! Useful but may want to turn these off later.
   productionBrowserSourceMaps: true,
 
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/welcome',
-        permanent: false,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/',
+  //       destination: '/',
+  //       permanent: false,
+  //     },
+  //   ];
+  // },
 };

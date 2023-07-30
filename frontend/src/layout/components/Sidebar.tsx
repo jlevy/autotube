@@ -6,9 +6,11 @@ export default function Sidebar(props: Props) {
   return (
     <Box>
       <Box mt={8} mb={4}>
-        <Link href="/">{/* <Logo /> */}</Link>
+        <Link href="/">
+          <b>AutoTube</b>
+        </Link>
       </Box>
-      {/* Sidebar content */}
+      Explore the best of your favorite YouTube channels
     </Box>
   );
 }

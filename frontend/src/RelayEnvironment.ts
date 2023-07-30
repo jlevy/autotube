@@ -1,15 +1,9 @@
 import { createClient, ExecutionResult, Sink } from 'graphql-ws';
 import {
-  Environment,
-  FetchFunction,
-  Network,
-  Observable,
-  RecordSource,
-  Store,
-  SubscribeFunction,
+    Environment, FetchFunction, Network, Observable, RecordSource, Store, SubscribeFunction
 } from 'relay-runtime';
 import config from './config';
-import { truncateCondensed } from './text/utils/friendlyTruncate';
+// import { truncateCondensed } from './text/utils/friendlyTruncate';
 import logPerf from './utils/logPerf';
 
 // Helps a lot with debugging.
@@ -44,7 +38,7 @@ const fetchFn: FetchFunction = async (request, variables) => {
     return response;
   }
 
-  return logPerf(`Relay request ${truncateCondensed(request.text)}`, relayRequest)();
+  //return logPerf(`Relay request ${truncateCondensed(request.text)}`, relayRequest)();
 };
 
 const wsClient = createClient({

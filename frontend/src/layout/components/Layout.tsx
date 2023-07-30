@@ -80,7 +80,6 @@ export default function Layout(props: LayoutProps) {
             variant="transparent"
             color="brand.500"
             onClick={onOpen}
-            //display={{ base: 'block', lg: 'none' }}
             position="fixed"
             top={2}
             left={2}

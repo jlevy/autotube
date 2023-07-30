@@ -3,8 +3,8 @@ import NavButton from './NavButton';
 
 const navigation = [
   {
-    to: '/home',
-    label: 'Home',
+    to: '/',
+    label: 'Explore Channel',
   },
   {
     to: '/about',
@@ -14,7 +14,7 @@ const navigation = [
 
 export default function NavBar() {
   return (
-    <Flex ml={5}>
+    <Flex>
       {navigation.map(({ to, label }) => {
         return (
           <NavButton key={to} to={to}>
