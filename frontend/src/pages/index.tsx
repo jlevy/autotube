@@ -9,32 +9,34 @@ import { Box, Button, Flex, FormControl, FormLabel, HStack, Input } from '@chakr
 export default function HomePage() {
   return (
     <Layout>
-      <FormControl>
-        <FormLabel>Explore a YouTube Channel</FormLabel>
-        <HStack mb={10}>
-          <Flex flex="1" width="100%">
-            <Box width="100%">
-              <Input
-                id="input"
-                autoFocus={true}
-                placeholder="Paste YouTube channel here..."
-                // onChange={onChange}
-                size="md"
-                variant="outline"
-              />
-            </Box>
-          </Flex>
-          <Button
-            size="md"
-            pl={2}
-            pr={2}
-            mt={0}
-            // onClick={handleButtonClick}
-          >
-            Go
-          </Button>
-        </HStack>
-      </FormControl>
+      <Box mt={10} mb={10}>
+        <FormControl>
+          <FormLabel>Analyze a YouTube Channel</FormLabel>
+          <HStack mb={10}>
+            <Flex flex="1" width="100%">
+              <Box width="100%">
+                <Input
+                  id="input"
+                  autoFocus={true}
+                  placeholder="Paste YouTube channel here..."
+                  // onChange={onChange}
+                  size="md"
+                  variant="outline"
+                />
+              </Box>
+            </Flex>
+            <Button
+              size="md"
+              pl={2}
+              pr={2}
+              mt={0}
+              // onClick={handleButtonClick}
+            >
+              Go
+            </Button>
+          </HStack>
+        </FormControl>
+      </Box>
       <Overview categorizedData={categorizedData1} />
     </Layout>
   );

@@ -17,7 +17,7 @@ export default function NavBar() {
     <Flex>
       {navigation.map(({ to, label }) => {
         return (
-          <NavButton key={to} to={to}>
+          <NavButton key={to} to={to} fontSize="md">
             {label}
           </NavButton>
         );
