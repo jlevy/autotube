@@ -20,30 +20,33 @@ def make_prompt(transcript) -> str:
     After thinking about, format your answers as XML, like so:
 
     ```xml
-    <topics>
-        <topic>
-            <content>A short word or phrase describing the topic</content>
-            <instances>
-                <substring_index></substring_index>
-        </topic>
-        <topic>
-            <content>Another short word or phrase, describing a different topic discussed</content>
-            <instances>
-                <substring_index>A substring from the transcript to reference a section where the topic was discussed</substring_index>
-                <substring_index>Another substring from the transcript to reference a different section where the same topic was discussed</substring_index>
-        </topic>
-    </topics>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <video>
+        <topics>
+            <topic>
+                <content>A short word or phrase describing the topic</content>
+                <instances>
+                    <substring_index></substring_index>
+            </topic>
+            <topic>
+                <content>Another short word or phrase, describing a different topic discussed</content>
+                <instances>
+                    <substring_index>A substring from the transcript to reference a section where the topic was discussed</substring_index>
+                    <substring_index>Another substring from the transcript to reference a different section where the same topic was discussed</substring_index>
+            </topic>
+        </topics>
 
-    <takeaways>
-        <takeaway>
-            <content>A short sentence summarizing the content discussed in this segment</content>
-            <substring_index>A substring from the transcript to reference the section being summarized in this takeaway</substring_index>
-        </takeaway>
-        <takeaway>
-            <content>Another short sentence summarizing the content discussed in this segment</content>
-            <substring_index>A substring from the transcript to reference the section being summarized in this takeaway</substring_index>
-        </takeaway>
-    </takeaways>
+        <takeaways>
+            <takeaway>
+                <content>A short sentence summarizing the content discussed in this segment</content>
+                <substring_index>A substring from the transcript to reference the section being summarized in this takeaway</substring_index>
+            </takeaway>
+            <takeaway>
+                <content>Another short sentence summarizing the content discussed in this segment</content>
+                <substring_index>A substring from the transcript to reference the section being summarized in this takeaway</substring_index>
+            </takeaway>
+        </takeaways>
+    </video>
     ```
 
     **IMPORTANT:** Please return _only_ the correctly formatted XML, without any additional information or text.
